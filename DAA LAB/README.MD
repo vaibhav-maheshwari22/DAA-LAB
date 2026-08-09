@@ -22,4 +22,11 @@ Contains C programs for algorithm logic and Python scripts for plotting performa
 * **Q5: Find the Partition Point** - Implementing O(log n) Binary Search to find transition points in a sorted boolean array.
 * **Q6: Element Uniqueness** - Optimizing duplicate detection from O(n^2) brute force to O(n log n) using Quick Sort.
 
+### Lab-02
+Focuses on advanced data structure operations, recurrence relations, and optimized merging techniques.
+* **Q1: Dictionary Operations Analysis** - Benchmarking the worst-case asymptotic running times of 7 primary operations (Search, Insert, Delete, Max, Min, Predecessor, Successor) across 6 fundamental data structures (Arrays, SLLs, DLLs - sorted and unsorted).
+* **Q2: Merge Sort (2-Way vs Modified 3-Way)** - Implementing and comparing the practical execution time of standard 2-Way Merge Sort $O(n \log_2 n)$ against a modified 3-Way Merge Sort $O(n \log_3 n)$.
+* **Q3: Merging K Sorted Arrays** - Evaluating the massive performance gap between Sequential Merging $O(n \cdot k^2)$ and an optimized Divide & Conquer Merging strategy $O(n \cdot k \log_2 k)$.
+
+---
 
