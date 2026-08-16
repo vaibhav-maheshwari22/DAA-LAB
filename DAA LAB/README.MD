@@ -22,9 +22,9 @@ Welcome to my DAA Lab repository. This repository serves as a comprehensive reco
 
 | Lab | Focus Area | Questions |
 | :--- | :--- | :---: |
-| **[Lab-01](./Lab-01)** | Growth of functions, empirical analysis, sorting fundamentals | 6 |
-| **[Lab-02](./Lab-02)** | Data structure trade-offs, divide & conquer, recurrences | 3 |
-| **[Lab-03](./Lab-03)** | Advanced Divide & Conquer, matrix operations, loop invariants | 6 |
+| **[LAB 1](./LAB%201)** | Growth of functions, empirical analysis, sorting fundamentals | 6 |
+| **[LAB 2](./LAB%202)** | Data structure trade-offs, divide & conquer, recurrences | 3 |
+| **[LAB 3](./LAB%203)** | Advanced Divide & Conquer, matrix operations, loop invariants | 6 |
 
 ---
 
