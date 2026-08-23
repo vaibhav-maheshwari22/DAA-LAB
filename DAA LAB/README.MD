@@ -25,6 +25,7 @@ Welcome to my DAA Lab repository. This repository serves as a comprehensive reco
 | **[LAB 1](./LAB%201)** | Growth of functions, empirical analysis, sorting fundamentals | 6 |
 | **[LAB 2](./LAB2)** | Data structure trade-offs, divide & conquer, recurrences | 3 |
 | **[LAB 3](./LAB%203)** | Advanced Divide & Conquer, matrix operations, loop invariants | 6 |
+| **[LAB 4](./LAB%204)** | Applications of sorting, sweep-line algorithms, binary search integration | 6 |
 
 ---
 
@@ -54,4 +55,11 @@ Splitting problems efficiently, analyzing trade-offs, and discharging mathematic
 * **Q5: Multiplying Special-Pattern Matrices** - Utilizing structural matrix symmetry to collapse multiplications into a strictly $O(n^2)$ D&C approach.
 * **Q6: Selection Sort & Loop Invariants** - Dynamically asserting initialization, maintenance, and termination invariants while proving $\Theta(n^2)$ runtime for best, worst, and average cases.
 
----
+### Lab-04: Applications of Sorting
+Focuses on using sorting as a foundational step to optimize complex search, matching, and overlapping interval problems.
+* **Q1: Stable Color Sort** - Achieving an $O(n)$ stable sort using bucket categorization to group items by color without disrupting their initial numerical order.
+* **Q2: Two Set Target Sum** - Reducing a brute-force $O(n^2)$ pair search to $O(n \log n)$ using `qsort` and binary search across two distinct sets.
+* **Q3: K-Sum Problem** - Implementing a generalized recursive sweep combined with binary search to find a target sum among $k$ elements in $O(n^{k-1} \log n)$ time.
+* **Q4: Party Peak Attendance** - Utilizing a sweep-line algorithm to process entry and exit events in $O(n \log n)$ time to find the maximum simultaneous overlaps.
+* **Q5: Merge Overlapping Intervals** - Sorting intervals by start times to merge continuous overlapping ranges in $O(n \log n)$ time.
+* **Q6: Point in Maximum Intervals** - Applying endpoint event sorting to identify a single coordinate present in the maximum number of intervals in $O(n \log n)$ time.
