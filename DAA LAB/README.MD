@@ -26,6 +26,7 @@ Welcome to my DAA Lab repository. This repository serves as a comprehensive reco
 | **[LAB 2](./LAB2)** | Data structure trade-offs, divide & conquer, recurrences | 3 |
 | **[LAB 3](./LAB%203)** | Advanced Divide & Conquer, matrix operations, loop invariants | 6 |
 | **[LAB 4](./LAB%204)** | Applications of sorting, sweep-line algorithms, binary search integration | 6 |
+| **[LAB 5](./LAB%205)** | Order statistics without sorting, randomized file I/O | 4 |
 
 ---
 
@@ -63,3 +64,10 @@ Focuses on using sorting as a foundational step to optimize complex search, matc
 * **Q4: Party Peak Attendance** - Utilizing a sweep-line algorithm to process entry and exit events in $O(n \log n)$ time to find the maximum simultaneous overlaps.
 * **Q5: Merge Overlapping Intervals** - Sorting intervals by start times to merge continuous overlapping ranges in $O(n \log n)$ time.
 * **Q6: Point in Maximum Intervals** - Applying endpoint event sorting to identify a single coordinate present in the maximum number of intervals in $O(n \log n)$ time.
+
+### Lab-05: Order Statistics & File I/O Sorting
+Focuses on finding elements without full sorting using partition-based selection, and handling file operations with randomized data generation.
+* **Q1: Find Median Without Sorting** - Utilizing the Quickselect algorithm to find the exact median in $O(N)$ average time with manual user input validation.
+* **Q2: Find K'th Smallest Element** - Extending the Quickselect partitioning logic to find the $K^{th}$ order statistic in $O(N)$ average time.
+* **Q3: Quick Sort with File I/O** - Generating $N$ random elements, storing them in a file, and applying in-place Quick Sort in $O(N \log N)$ expected time before writing the validated output back to disk.
+* **Q4: Heap Sort with File I/O** - Implementing an $O(N \log N)$ worst-case Heap Sort on randomly generated file data and dynamically validating the sorted output.
