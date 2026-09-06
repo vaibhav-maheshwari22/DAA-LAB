@@ -27,6 +27,8 @@ Welcome to my DAA Lab repository. This repository serves as a comprehensive reco
 | **[LAB 3](./LAB%203)** | Advanced Divide & Conquer, matrix operations, loop invariants | 6 |
 | **[LAB 4](./LAB%204)** | Applications of sorting, sweep-line algorithms, binary search integration | 6 |
 | **[LAB 5](./LAB%205)** | Order statistics without sorting, randomized file I/O | 4 |
+| **[LAB 6.1](./LAB%206.1)** | Array/Matrix operations, FFT convolution, sorting via reversals | 4 |
+| **[LAB 6.2](./LAB%206.2)** | Dynamic Programming algorithms and state tabulation | 4 |
 
 ---
 
@@ -71,3 +73,17 @@ Focuses on finding elements without full sorting using partition-based selection
 * **Q2: Find K'th Smallest Element** - Extending the Quickselect partitioning logic to find the $K^{th}$ order statistic in $O(N)$ average time.
 * **Q3: Quick Sort with File I/O** - Generating $N$ random elements, storing them in a file, and applying in-place Quick Sort in $O(N \log N)$ expected time before writing the validated output back to disk.
 * **Q4: Heap Sort with File I/O** - Implementing an $O(N \log N)$ worst-case Heap Sort on randomly generated file data and dynamically validating the sorted output.
+
+### Lab-06.1: Advanced Operations & FFT
+Focuses on analyzing worst-case bounds for foundational structures, finding $O(n \log n)$ convolution limits, and executing mathematical sorting models.
+* **Q1: 1D Array Operations** - Analyzing and implementing strictly bounded algorithms for 9 distinct array operations, including QuickSelect median and randomized partitioning.
+* **Q2: 2D Matrix Operations** - Executing in-situ transposition, $O(n^3)$ determinant Gaussian elimination, and power iteration for eigenspaces on square matrices.
+* **Q3: Vector Convolution (FFT)** - Overcoming the $O(n \cdot m)$ convolution bottleneck using a Fast Fourier Transform Divide & Conquer approach to achieve $O(n \log n)$ time.
+* **Q4: Sorting via Reversals** - Mathematically proving a $\le 2n$ reversal bound and designing a block-rotation Merge Sort to achieve an $O(n \log^2 n)$ operation cost.
+
+### Lab-06.2: Dynamic Programming
+Focuses on solving optimization problems by breaking them down into overlapping subproblems and tabulating state results to eliminate redundant recursive calls.
+* **Q1: Nth Fibonacci Number** - Implementing an $O(N)$ dynamic programming approach to compute Fibonacci numbers, optimizing away the exponential recursive overhead.
+* **Q2: 0/1 Knapsack Problem** - Using a 2D DP table to determine the maximum profit within a given weight capacity in $O(N \cdot W)$ time and space.
+* **Q3: Longest Common Subsequence (LCS)** - Finding the longest common subsequence between two strings and reconstructing the exact sequence path in $O(M \cdot N)$ time.
+* **Q4: Matrix Chain Multiplication** - Determining the optimal parenthesization of $N-1$ matrices to minimize total scalar multiplications in $O(N^3)$ time using DP memoization limits.
