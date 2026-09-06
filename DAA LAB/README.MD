@@ -27,8 +27,8 @@ Welcome to my DAA Lab repository. This repository serves as a comprehensive reco
 | **[LAB 3](./LAB%203)** | Advanced Divide & Conquer, matrix operations, loop invariants | 6 |
 | **[LAB 4](./LAB%204)** | Applications of sorting, sweep-line algorithms, binary search integration | 6 |
 | **[LAB 5](./LAB%205)** | Order statistics without sorting, randomized file I/O | 4 |
-| **[LAB 6.1](./LAB%206.1)** | Array/Matrix operations, FFT convolution, sorting via reversals | 4 |
-| **[LAB 6.2](./LAB%206.2)** | Dynamic Programming algorithms and state tabulation | 4 |
+| **[LAB 6.1](./LAB%206%201)** | Array/Matrix operations, FFT convolution, sorting via reversals | 4 |
+| **[LAB 6.2](./LAB%206%202)** | Dynamic Programming algorithms and state tabulation | 4 |
 
 ---
 
