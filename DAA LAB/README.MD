@@ -29,6 +29,7 @@ Welcome to my DAA Lab repository. This repository serves as a comprehensive reco
 | **[LAB 5](./LAB%205)** | Order statistics without sorting, randomized file I/O | 4 |
 | **[LAB 6 1](./LAB%206/LAB%206%201)** | Array/Matrix operations, FFT convolution, sorting via reversals | 4 |
 | **[LAB 6 2](./LAB%206/LAB%206%202)** | Dynamic Programming algorithms and state tabulation | 4 |
+| **[LAB 7](./LAB%207)** | Puzzle-based algorithms, combinatorial state spaces, advanced DP & sweep-line | 7 |
 
 ---
 
@@ -87,3 +88,13 @@ Focuses on solving optimization problems by breaking them down into overlapping 
 * **Q2: 0/1 Knapsack Problem** - Using a 2D DP table to determine the maximum profit within a given weight capacity in $O(N \cdot W)$ time and space.
 * **Q3: Longest Common Subsequence (LCS)** - Finding the longest common subsequence between two strings and reconstructing the exact sequence path in $O(M \cdot N)$ time.
 * **Q4: Matrix Chain Multiplication** - Determining the optimal parenthesization of $N-1$ matrices to minimize total scalar multiplications in $O(N^3)$ time using DP memoization limits.
+
+### Lab-07: Advanced Algorithm Applications & Puzzles
+Focuses on solving classic mathematical puzzles, exploring game-theoretic parity, and implementing optimized DP and sweep-line algorithms.
+* **Q1: Invert the Coin-Triangle** - Deriving an optimal geometric overlap compact formula $\lfloor n(n+1)/6 \rfloor$ to flip a coin triangle in $O(1)$ time.
+* **Q2: Super Egg Testing Experiment** - Implementing a generalized $O(E \cdot F^2)$ DP solution to determine the critical threshold floor in the worst case for $E$ eggs and $F$ floors.
+* **Q3: Reve's Puzzle (4-Peg Hanoi)** - Applying the Frame-Stewart divide-and-conquer strategy to move 8 disks in exactly 33 moves, scaling in $O(2^{\sqrt{2n}})$ time.
+* **Q4: Security Switches** - Modeling switch toggle dependencies using Gray code and the Baguenaudier recursion to deactivate $n$ switches in $\Theta(2^n)$ minimum moves.
+* **Q5: Hitting a Moving Target** - Designing a deterministic two-phase parity sweep algorithm guaranteeing target interception on $n$ spots within $2n-4$ shots.
+* **Q6: The Best Time to be Alive** - Using an $O(N \log N)$ sweep-line algorithm with a death-before-birth tie-breaking policy to find the peak concurrent lifespan year.
+* **Q7: Matrix Chain Multiplication (MCM)** - Implementing the $O(n^3)$ dynamic programming parenthesization table to minimize scalar operations and reconstructing the exact associative order.
