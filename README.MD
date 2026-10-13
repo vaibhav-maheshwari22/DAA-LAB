@@ -33,7 +33,7 @@ Welcome to my DAA Lab repository. This repository serves as a comprehensive reco
 | **[LAB 7](./LAB%207)**               | Puzzle-based algorithms, combinatorial state spaces, advanced DP & sweep-line    |     7     |
 | **[LAB 8](./LAB%208)**               | Dynamic Programming, Recursion, DP state reconstruction, open-problem simulation |     9     |
 | **[LAB 9](./LAB%209)**               | Greedy algorithms, heap-based scheduling, prefix codes, open-problem conjecture  |    10     |
-
+| **[LAB 10](./LAB%2010)**             | Disjoint Set Union, online bipartiteness, dynamic connectivity, reverse-time DSU |    5     |
 ---
 
 ## 📖 Detailed Lab Breakdown
@@ -146,3 +146,14 @@ Focuses on greedy choice properties, exchange-argument optimality, priority-queu
 - **Q8: Minimum Number of Meeting Rooms** - Sweep-line over meetings sorted by start time with a min-heap of active end times, reusing freed rooms on demand in $O(n \log n)$ time.
 - **Q9: Optimal Alphabetic Binary Tree (Interval DP)** - Computing the minimum weighted path length $\sum w_i \cdot \text{depth}(i)$ while preserving leaf order via $O(n^3)$ interval DP, with full alphabetic-tree reconstruction.
 - **Q10: Greedy Superstring Conjecture (Open Problem)** - Implementing the maximum-overlap greedy merger for the NP-hard Shortest Superstring Problem in $O(n^3 \cdot T^2)$ time. The long-standing 2-approximation conjecture was disproved by a September 2026 arXiv paper showing the ratio can reach $\tfrac{9}{4}$.
+
+
+### Lab-10: Disjoint Set Union & Online Graph Algorithms
+
+Focuses on the Disjoint Set Union (DSU) data structure and its applications to online, dynamic, and reverse-time graph problems, including parity DSU for bipartiteness, coordinate-flattened grid connectivity, and reverse-time vertex restoration.
+
+- **Q1: Online Graph-Bipartiteness Testing** - Maintaining bipartiteness as edges arrive online using a **parity DSU**, where each vertex stores its colour parity relative to its component root. An edge $(u, v)$ is accepted only if $\text{parity}[u] \oplus \text{parity}[v] = 1$, otherwise it is rejected as an odd cycle. Runs in $O(E\, \alpha(V))$ amortised time.
+- **Q2: Dynamic Connected Components in a Grid (Number of Islands II)** - Adding land cells one by one to an all-water $R \times C$ grid and reporting island counts after each addition. Cells are flattened via $\text{id}(r, c) = r \cdot C + c$ and DSU unions are performed with at most 4 land neighbours per insertion, in $O(k\, \alpha(R C))$ total time.
+- **Q3: Maximum Weight Component with Size Constraint** - Receiving edges online and reporting the maximum total vertex weight among components of size at most $K$. DSU maintains `size[root]` and `total[root]` per component; a root scan after each union picks the best qualifying component. Runs in $O(E\,(V + \alpha(V)))$.
+- **Q4: Reverse Time-Step DSU Application** - Deleting vertices one by one in a given order and reporting the maximum remaining component weight after each deletion. Processing the order in **reverse** converts each deletion into an insertion, letting DSU handle the sequence in $O(V^2 + E\, \alpha(V))$ total time.
+- **Q5: Lexicographically Smallest Connected Component Permutation** - Finding the lexicographically smallest permutation reachable via allowed swaps along graph edges. DSU groups positions into equivalence classes; each class sorts its positions and values independently and pairs them in ascending order. Runs in $O((n + m)\, \alpha(n) + n \log n)$.
