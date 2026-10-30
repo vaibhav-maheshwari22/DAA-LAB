@@ -33,7 +33,8 @@ Welcome to my DAA Lab repository. This repository serves as a comprehensive reco
 | **[LAB 7](./LAB%207)**               | Puzzle-based algorithms, combinatorial state spaces, advanced DP & sweep-line    |     7     |
 | **[LAB 8](./LAB%208)**               | Dynamic Programming, Recursion, DP state reconstruction, open-problem simulation |     9     |
 | **[LAB 9](./LAB%209)**               | Greedy algorithms, heap-based scheduling, prefix codes, open-problem conjecture  |    10     |
-| **[LAB 10](./LAB%2010)**             | Disjoint Set Union, online bipartiteness, dynamic connectivity, reverse-time DSU |    5     |
+| **[LAB 10](./LAB%2010)**             | Disjoint Set Union, online bipartiteness, dynamic connectivity, reverse-time DSU |    5      |
+| **[LAB 11](./LAB%2011)**             | Advanced graph traversals: 0-1 BFS, multi-source BFS, bidirectional BFS          |     3     |
 ---
 
 ## 📖 Detailed Lab Breakdown
@@ -157,3 +158,11 @@ Focuses on the Disjoint Set Union (DSU) data structure and its applications to o
 - **Q3: Maximum Weight Component with Size Constraint** - Receiving edges online and reporting the maximum total vertex weight among components of size at most $K$. DSU maintains `size[root]` and `total[root]` per component; a root scan after each union picks the best qualifying component. Runs in $O(E\,(V + \alpha(V)))$.
 - **Q4: Reverse Time-Step DSU Application** - Deleting vertices one by one in a given order and reporting the maximum remaining component weight after each deletion. Processing the order in **reverse** converts each deletion into an insertion, letting DSU handle the sequence in $O(V^2 + E\, \alpha(V))$ total time.
 - **Q5: Lexicographically Smallest Connected Component Permutation** - Finding the lexicographically smallest permutation reachable via allowed swaps along graph edges. DSU groups positions into equivalence classes; each class sorts its positions and values independently and pairs them in ascending order. Runs in $O((n + m)\, \alpha(n) + n \log n)$.
+
+### Lab-11: Advanced Graph Traversals
+
+Focuses on specialized shortest-path and graph traversal algorithms applied to constraint-based routing, geometric partitioning, and word mutation networks.
+
+- **Q1: Shortest Path on Parity-Constrained Graphs via 0-1 BFS** - Computing minimum effective cost where a penalty $C$ is applied based on the parity of weight-1 edges. Solved by expanding the graph into $2V$ states `(vertex, parity)` and running **0-1 BFS** in $O(V + E)$ time using a deque.
+- **Q2: Multi-Source BFS for Radius-Constrained Voronoi Cell Partitioning** - Assigning each vertex to its closest hub within a radius threshold $R$. Using a **Multi-Source BFS** with deterministic tie-breaking by hub index, assigning ownership and distance in $O(V + E)$ total time.
+- **Q3: Bidirectional BFS for Shortest Transformation Sequence** - Finding the minimum number of single-character mutations to transform string $A$ to $B$ within a dictionary. Using **Bidirectional BFS** with `bsearch` for $O(\log N)$ dictionary lookups, keeping the total time bounded by $O(N \log N + N \cdot L \cdot 26 \cdot \log N)$.
